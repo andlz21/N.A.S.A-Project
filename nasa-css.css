@@ -1,0 +1,140 @@
+@import url(//db.onlinewebfonts.com/c/f88cd11de6d9aa48ddc14cf6181b309c?family=Nasalization);
+
+@font-face {
+  font-family: "Nasalization";
+  src: url("//db.onlinewebfonts.com/t/f88cd11de6d9aa48ddc14cf6181b309c.eot");
+  src: url("//db.onlinewebfonts.com/t/f88cd11de6d9aa48ddc14cf6181b309c.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/f88cd11de6d9aa48ddc14cf6181b309c.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/f88cd11de6d9aa48ddc14cf6181b309c.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/f88cd11de6d9aa48ddc14cf6181b309c.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/f88cd11de6d9aa48ddc14cf6181b309c.svg#Nasalization")
+      format("svg");
+}
+
+body {
+  background-image: url(/assets/img/astronaut-cover.jpg);
+  width: 95vw;
+  height: 90vh;
+  background-size: 100%;
+  margin: 7px;
+  font-family: "Nasalization", sans-serif;
+}
+
+body:hover {
+  background-size: 97%;
+  transition: 45s;
+  background-position: center;
+  background-repeat: norepeat;
+}
+
+#nasa-logo {
+  height: 16%;
+  width: auto;
+  margin-left: 30px;
+  padding-top: 5px;
+  float: left;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  padding-top: 20px;
+  float: left;
+}
+
+.nav-item {
+  cursor: pointer;
+  margin: 0px 25px;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  padding-bottom: 0.35rem;
+}
+
+#text_nasa {
+  height: auto;
+  width: 10%;
+  justify-content: flex-end;
+  float: right;
+  padding-top: 22px;
+  padding-left: 15px;
+}
+
+.content-medium {
+  display: inline-block;
+  color: white;
+  width: 100%;
+  padding-top: 50px;
+  padding-left: 25px;
+}
+
+.content-medium-text1 {
+  font-size: 38px;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.explore-content {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#arrow-icon {
+  margin-top: 0;
+  height: 100%;
+  width: 50px;
+  cursor: pointer;
+}
+
+#explore {
+  font-size: 20px;
+  margin-right: 17px;
+  position: relative;
+  padding-bottom: 0.25rem;
+  margin-top: 17px;
+}
+
+.mission-content {
+  display: flex;
+}
+
+#mission {
+  margin-right: 20px;
+  font-size: 20px;
+  margin-top: 0;
+  position: relative;
+  padding-bottom: 0.35rem;
+  letter-spacing: 0.5px;
+}
+
+#play-icon {
+  height: 100%;
+  width: 45px;
+  cursor: pointer;
+  margin-top: -12px;
+}
+
+#explore::before,
+li::before,
+#mission::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  right: 0;
+  height: 3px;
+  background-color: #0066b2;
+  transition: width 0.25s ease-in;
+}
+
+#explore:hover::before,
+li:hover::before,
+#mission:hover::before {
+  width: 100%;
+}
